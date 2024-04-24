@@ -1,0 +1,25 @@
+.category-card-item {
+    display: flex;
+    width: 30rem;
+    justify-content: space-between;
+}
+
+.main-container-category {
+    margin-top: 50px;
+}
+
+.attractions-list {
+    list-style: none;
+    margin-left: -35px;
+}
+
+.category-header {
+    display: flex;
+    align-items: center;
+}
+
+.category-picture {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+}

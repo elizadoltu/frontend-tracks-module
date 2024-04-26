@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.description {
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    /* Add border */
+    padding: 10px;
+    /* Add padding for better appearance */
+}
+
+.description p {
+    margin-bottom: 5px;
+}

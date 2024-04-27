@@ -1,7 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/attractions-card-style.css";
 
 const CategoryCard = ({ categoryName, attractions, picture }) => {
+  const [activeDescription, setActiveDescription] = useState(null);
+
+  const handleTextClick = (description) => {
+    if (activeDescription === description) {
+      setActiveDescription(null);
+    } else {
+      setActiveDescription(description);
+    }
+  };
+
   return (
     <div className="main-container-category">
       <div className="category-header">
@@ -12,9 +22,19 @@ const CategoryCard = ({ categoryName, attractions, picture }) => {
         {attractions.map((attraction, index) => (
           <li key={index}>
             <div className="category-card-item">
-              <p>{attraction.name}</p>
+              <p onClick={() => handleTextClick(attraction.description)}>
+                {attraction.name}
+              </p>
               <p className="attraction-distance">{attraction.distance} m</p>
             </div>
+            {activeDescription === attraction.description && (
+              <div className="description">
+                <hr className="popup-line" />
+                <p><strong>{attraction.description}</strong></p>
+                <a href={attraction.link}>More Info</a>
+                <hr className="popup-line" />
+              </div>
+            )}
           </li>
         ))}
       </ul>

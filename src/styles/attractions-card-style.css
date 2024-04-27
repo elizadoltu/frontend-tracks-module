@@ -23,3 +23,22 @@
     height: 30px;
     margin-left: 20px;
 }
+
+.popup-line {
+    border: 1px solid black;
+    margin: 10px 0;
+  }
+
+  .popup-animation {
+    animation-name: fadeIn;
+    animation-duration: 0.5s;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }

@@ -31,7 +31,7 @@ const CategoryCard = ({ categoryName, attractions, picture }) => {
               <div className="description">
                 <hr className="popup-line" />
                 <p><strong>{attraction.description}</strong></p>
-                <a href={attraction.link}>More Info</a>
+                <a href={attraction.link} target="_blank">More Info</a>
                 <hr className="popup-line" />
               </div>
             )}

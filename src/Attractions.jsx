@@ -63,8 +63,8 @@ const AttractionsPage = () => {
   return (
     <div className="main-container-attractions">
       <div className="header-attractions">
-        <h2>Hotel surroundings <img src={hotelsurroundings} alt="hotel icon"/></h2>
-        <a href="http://google.com" target="_blank" className="link-to-the-map">Show map <img src={showmap} alt="show map icon" /></a>
+        <h2>Hotel surroundings <img src={hotelsurroundings} alt="hotel icon" className="hotel-surr-image"/></h2>
+        <a href="http://google.com" target="_blank" className="link-to-the-map">Show map <img src={showmap} alt="show map icon" className="show-map-image"/></a>
       </div>
       <div className="main-page-section">
         <div className="grid-container">

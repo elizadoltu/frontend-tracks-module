@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    overflow: hidden;
     margin-top: 5rem;
 }
 
@@ -26,4 +27,30 @@
 .link-to-the-map {
     text-decoration: none;
     color: var(--blue-color);
+}
+
+@media (max-width:768px) {
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .main-container-attractions {
+        font-size: 14px;
+    }
+
+    .header-attractions {
+        margin-left: 60px;
+        margin-top: 3rem;
+    }
+
+    .hotel-surr-image {
+        width: 20px;
+        height: 20px;
+    }
+
+    .show-map-image {
+        width: 20px;
+        height: 20px;
+    }
 }
